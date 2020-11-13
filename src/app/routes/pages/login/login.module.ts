@@ -1,3 +1,4 @@
+import { MysharedmoduleModule } from './../mysharedcomponents/mysharedmodule.module';
 import { LoginComponent } from './login/login.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -12,6 +13,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     ReactiveFormsModule,
+    MysharedmoduleModule,
     RouterModule.forChild(routes)
   ],
   declarations: [LoginComponent],

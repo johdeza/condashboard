@@ -1,4 +1,3 @@
-import { MysharedmoduleModule } from './pages/mysharedcomponents/mysharedmodule.module';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslatorService } from '../core/translator/translator.service';
@@ -13,7 +12,7 @@ import { MyfooterComponent } from './pages/mysharedcomponents/myfooter/myfooter.
         SharedModule,
         RouterModule.forRoot(routes)
     ],
-    declarations: [MyfooterComponent],
+    declarations: [],
     exports: [
         RouterModule
     ]

@@ -1,4 +1,3 @@
-import { MysharedmoduleModule } from './routes/pages/mysharedcomponents/mysharedmodule.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // this is needed!
 import { NgModule } from '@angular/core';
@@ -7,7 +6,6 @@ import { TranslateService, TranslateModule, TranslateLoader } from '@ngx-transla
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppComponent } from './app.component';
-
 import { CoreModule } from './core/core.module';
 import { LayoutModule } from './layout/layout.module';
 import { SharedModule } from './shared/shared.module';
@@ -30,7 +28,6 @@ export function createTranslateLoader(http: HttpClient) {
         CoreModule,
         FormsModule,
         ReactiveFormsModule,  
-        MysharedmoduleModule,
         LayoutModule,
         SharedModule.forRoot(),
         RoutesModule,

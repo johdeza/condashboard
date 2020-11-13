@@ -1,14 +1,20 @@
+import { RouterModule } from '@angular/router';
 import { MyfooterComponent } from './myfooter/myfooter.component';
+import { MynavbarComponent } from './mynavbar/mynavbar.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 
 
+
 @NgModule({
-  declarations: [],
+  declarations: [MyfooterComponent, MynavbarComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule,
+    RouterModule
   ],
-  exports: [MyfooterComponent]
+  exports: [MynavbarComponent, MyfooterComponent]
 })
 export class MysharedmoduleModule { }
