@@ -6,20 +6,13 @@ import { SharedModule } from '../shared/shared.module';
 
 import { menu } from './menu';
 import { routes } from './routes';
-import { MyfooterComponent } from './pages/mysharedcomponents/myfooter/myfooter.component';
 @NgModule({
-    imports: [
-        SharedModule,
-        RouterModule.forRoot(routes)
-    ],
-    declarations: [],
-    exports: [
-        RouterModule
-    ]
+  imports: [SharedModule, RouterModule.forRoot(routes)],
+  declarations: [],
+  exports: [RouterModule],
 })
-
 export class RoutesModule {
-    constructor(public menuService: MenuService, tr: TranslatorService) {
-        menuService.addMenu(menu);
-    }
+  constructor(public menuService: MenuService, tr: TranslatorService) {
+    menuService.addMenu(menu);
+  }
 }
